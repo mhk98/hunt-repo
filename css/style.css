@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+}
+
+p{
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p{
+
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    color: #111;
+
+}
+
+.heading h2{
+    font-size: 35px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.heading p{
+    padding-top: 30px;
+    max-width: 590px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 60px;
+
+}
+
+body{
+    overflow-x: hidden;
+    color: #353535;
+}
+
+.navbar{
+    padding: 23px 0;
+    border-bottom: 3px solid rgba(254, 198, 0, .2);
+}
+
+nav ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff !important;
+    transition: all linear .3s;
+    position: relative;
+   
+}
+
+nav ul li{
+    padding-left: 33px;
+}
+
+.navbar-expand-lg .navbar-bar .nav-link{
+    padding: 0;
+}
+
+nav ul li a:hover{
+    color: #fec600 !important;
+}
+
+nav ul li a::after{
+    width: 100%;
+    height: 3px;
+    background: transparent;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -37px;
+    left: 0;
+    content: "";
+    transition: all linear .2s;
+}
+
+nav ul li a:hover::after{
+    background: #fec600;
+}
+
+.banner-slider{
+    background: url(../image/banner-slider1.jpg) no-repeat center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
+    
+}
+
+.banner-slider .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    padding: 245px 0 185px;
+}
+
+.banner-slider .content{
+    margin: 0 auto;
+}
+.banner-slider h3{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 20px;
+}
+
+.banner-slider h1{
+    font-size: 55px;
+    font-weight: 700;
+    color: #fec600;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 30px;
+}
+
+.banner-slider p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 60px;
+    max-width: 600px;
+}
+
+.banner-slider a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background: transparent;
+    padding: 20px;
+    margin-right: 20px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #fff;
+}
+
+.banner-slider a:hover{
+    background: #fec600;
+}
+
+#banner .icon{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #000;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 23px;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+
+#banner .icon:hover{
+    background: #fec600;
+}
+
+#banner .icon.left{
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    
+}
+
+#banner .icon.right{
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateX(-50%);
+    
+}
+
+
+#about{
+    
+}
+
+
+#about .item{
+   width: 100%;
+   height: 200px;
+    background: #eeeeee;
+    padding: 40px 52px 45px;
+    margin: 50px;
+    position: relative;
+}
+
+#about .item h2{
+    padding-bottom: 30px;
+}
+
+
+
+#about .item::before{
+    width: 40px;
+    height: 40px;
+    background:#eeeeee;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    content: "";
+}
+
+#about .image{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    margin: -24px 55px;
+}
+
+#about .item.btm-item::before{
+    width: 40px;
+    height: 40px;
+    background:#eeeeee;
+    position: absolute;
+    top: 74px;
+    left: 99%;
+    transform: translateY(-50%) rotate(45deg);
+    content: "";
+    
+}
+
+#about .item.m-item::before{
+    width: 40px;
+    height: 40px;
+    background: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    content: "";
+    
+}
+
+#about .item.n-item::before{
+    width: 40px;
+    height: 40px;
+    background: red;
+    position: absolute;
+    top: -20px;
+    right: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    content: "";
+    
+}
